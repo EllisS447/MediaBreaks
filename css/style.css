@@ -35,8 +35,16 @@ div {
 
 /* Phone and narrow viewport first */
 
-.container {
-  width: 100%;
+@media (max-width: 767px) {
+    [class*="col"] {
+        width: 100% !important;
+        float: none;
+    }
+
+    img { 
+        max-width: 100%;
+        height: auto;
+    }
 }
 
 .wrapper {
